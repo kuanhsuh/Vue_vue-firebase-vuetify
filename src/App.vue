@@ -3,7 +3,7 @@
     <v-navigation-drawer temporary v-model="sideNav">
       <v-list>
         <v-list-tile
-          v-for="item in menuItems" 
+          v-for="item in menuItems"
           :key="item.title"
           :to="item.link">
           <v-list-tile-action>
