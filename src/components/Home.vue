@@ -13,7 +13,7 @@
         <v-carousel>
           <v-carousel-item 
             v-for="meetup in meetups"
-            v-bind:src="meetup.imageUrl"
+            :src="meetup.imageUrl"
             :key="meetup.id">
               <div class="title">
               {{ meetup.title }}
