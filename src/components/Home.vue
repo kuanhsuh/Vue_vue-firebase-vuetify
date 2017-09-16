@@ -34,12 +34,9 @@
 </template>
 <script>
   export default {
-    data () {
-      return {
-        meetups: [
-          { imageUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg', id: 'asdfasdf', title: 'Meetup in Newyork' },
-          { imageUrl: 'http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/paris-attractions-xlarge.jpg', id: 'asdfasdf', title: 'Meetup in Paris' }
-        ]
+    computed: {
+      meetups () {
+        return this.$store.getters.featuredMeetups
       }
     },
     methods: {
