@@ -30,6 +30,7 @@ export const app = new Vue({
       projectId: 'youtube-devmeetup-a40dc',
       storageBucket: 'youtube-devmeetup-a40dc.appspot.com'
     })
+    this.$store.dispatch('loadMeetups')
   }
 })
 
