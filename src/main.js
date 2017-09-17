@@ -28,7 +28,7 @@ export const app = new Vue({
       authDomain: 'youtube-devmeetup-a40dc.firebaseapp.com',
       databaseURL: 'https://youtube-devmeetup-a40dc.firebaseio.com',
       projectId: 'youtube-devmeetup-a40dc',
-      storageBucket: 'youtube-devmeetup-a40dc.appspot.com'
+      storageBucket: 'gs://youtube-devmeetup-a40dc.appspot.com/'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
